@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.web.filter.CharacterEncodingFilter;
 
 /**
  * 1、配置类里面使用@Bean标注在方法上给容器注册组件，默认也是单实例的
@@ -58,5 +59,10 @@ public class MyConfig {
     public Pet pet02(){
         return new Pet("Tomcat");
     }
+
+//    @Bean
+//    public CharacterEncodingFilter filter(){
+//        return null;
+//    }
 
 }

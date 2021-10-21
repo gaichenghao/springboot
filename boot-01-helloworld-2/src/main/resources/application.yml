@@ -1,0 +1,32 @@
+
+
+
+person:
+  userName: zhangsan
+  #单引号回将 \n作为字符串输出 双引号会将\n 作为换行数据
+  #双引号不会转义 单引号会转义
+  boss: true
+  birth: 2019/12/9
+  age: 18
+#  interests: [篮球,足球]
+  interests:
+    - 篮球
+    - 足球
+    - 18
+  animal: [猫,狗]
+#  score:
+#    english: 80
+#    math: 90
+  score: {english: 80,math: 90}
+  salarys:
+    - 9999.98
+    - 9999.99
+  pet:
+    name: 狗
+    weight: 10
+  allPets:
+    sick:
+      - {name: agou,weight: 99.9}
+      - name: amao
+        weight: 99.1
+    health: [{ame: agou2,weight: 99.9},{ame: agou1,weight: 99.9}]

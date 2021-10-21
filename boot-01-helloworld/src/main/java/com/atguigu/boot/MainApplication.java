@@ -16,11 +16,11 @@ import org.springframework.context.annotation.ComponentScan;
  * 主程序类 主配置类
  *1\ @SpringBootApplication：这是一个springboot应用
  *
- * */
-//@SpringBootConfiguration
-//@EnableAutoConfiguration
-//@ComponentScan("com.atguigu")
-@SpringBootApplication(scanBasePackages = "com.atguigu")
+// * */
+@SpringBootConfiguration//配置类
+@EnableAutoConfiguration
+@ComponentScan("com.atguigu")//指定扫描那些spring注解
+//@SpringBootApplication(scanBasePackages = "com.atguigu")
 public class MainApplication {
 
 

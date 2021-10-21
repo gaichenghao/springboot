@@ -1,0 +1,9 @@
+spring:
+  mvc:
+    static-path-pattern: /res/**
+    hiddenmethod:
+      filter:
+        enabled: true
+
+#  resources:
+#    static-locations: classpath:/haha/
