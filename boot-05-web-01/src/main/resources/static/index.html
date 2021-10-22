@@ -21,5 +21,35 @@
     <input name="_method" type="hidden" value="PUT"/>
     <input value="Rest-PUT 提交" type="submit"/>
 </form>
+<hr/>
+测试基本注解：
+<ul>
+    <a href="/car/3/owner/lisi?age=18&inters=basketball&inters=game">/car/{id}/owner/{username}</a>
+    <li>@PathVariable(路径变量)</li>
+    <li>@RequestHeader(获取请求头)</li>
+    <li>@RequestParam(获取请求参数)</li>
+    <li>@CookieValue(获取cookie值)</li>
+    <li>@RequestBody(获取请求体[post])</li>
+    <li>@RequestAttribute(获取Request域属性)</li>
+    <li>@MathrixVariable(矩阵变量)</li>
+</ul>
+/cars/{path}?xxx=xxxx&aaa=ccc queryString 查询字符串。@RequestParam：<br/>
+/cars/sell;low=34;brand=byd,audi,yd  :矩阵变量<br/>
+页面开发，cookie禁用了，session里面的内容怎么使用：
+session.set(a,b)---->jsessionid----->cookie------>每次发请求携带
+url重写：/abc;jsesssionid=xxxx 把cookie的值使用矩阵变量的方式进行传递
+
+<a href="/car/sell;low=34;brand=byd,audi,yd">@MathrixVariable(矩阵变量)</a>
+<a href="/car/sell;low=34;brand=byd;brand=audi;brand=yd">@MathrixVariable(矩阵变量)</a>
+<a href="/boos/1;age=20/2;age=10">@MathrixVariable(矩阵变量)/boos/{bossId}/{empId}</a>
+
+<br/>
+<form action="/save" method="post">
+    测试@RequestBody获取数据<br/>
+    用户名：<input name="username"/>  <br/>
+    邮箱:<input name="email"/>
+    <input type="submit" value="提交"/>
+</form>
+
 </body>
 </html>
