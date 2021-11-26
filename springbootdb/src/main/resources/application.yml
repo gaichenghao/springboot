@@ -1,0 +1,39 @@
+spring:
+  datasource:
+
+    url: jdbc:mysql://localhost:3306/db2021
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+    druid:
+      stat-view1-servlet:
+        enabled: true
+        login-username: admin
+        login-password: admin
+        resetEnable: false
+#      filters: stat,wall
+#      aop-patterns: com.atguigu.admin.*
+#
+#
+#      web-stat-filter:
+#        enabled: true
+#        urlPatten: /*
+#        #exclusions: 有默认值
+#      filter:
+#        stat:
+#          slow-sql-millis: 1000 #毫秒
+#          logSlowSql: true
+#          enable: true
+#        wall:
+#          enable: true
+#          config:
+#            update-allow: false
+
+  jdbc:
+    template:
+      query-timeout: 3
+#配置mybatis的规则
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*

@@ -7,6 +7,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/boot-01-helloworld-2/pom.xml" />
         <option value="$PROJECT_DIR$/boot-05-web-01/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-05-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-05-web-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/boot-05-web-admin-2-4/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootdb/pom.xml" />
       </list>
     </option>
   </component>

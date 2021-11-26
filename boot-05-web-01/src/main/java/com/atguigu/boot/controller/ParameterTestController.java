@@ -1,12 +1,10 @@
 package com.atguigu.boot.controller;
 
 
-import org.springframework.ui.Model;
+import com.atguigu.boot.bean.Person;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -73,6 +71,15 @@ public class ParameterTestController {
         map.put("bossAge",bossAge);
         map.put("empAge",empAge);
         return map;
+    }
+
+
+    /**
+     * 数据绑定：页面提交的请求数据（get post）都可以和对象属性进行绑定
+     * */
+    @PostMapping("/saveuser")
+    public Person saveuser(Person person){
+        return  person;
     }
 
 

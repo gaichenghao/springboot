@@ -4,6 +4,13 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
+    contentnegotiation:
+      favor-parameter: true
 
 #  resources:
 #    static-locations: classpath:/haha/
+
+
+server:
+  servlet:
+    context-path: /world

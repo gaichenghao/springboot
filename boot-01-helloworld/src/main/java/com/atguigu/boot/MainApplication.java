@@ -12,6 +12,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 主程序类 主配置类
  *1\ @SpringBootApplication：这是一个springboot应用
@@ -80,6 +83,21 @@ public class MainApplication {
         boolean hehe = run.containsBean("hehe");
         System.out.println("容器中hehe组件:"+hehe);
 
+
+        List<String> a=new ArrayList<>();
+        for (int i=1;i<200;i++){
+            a.add(String.valueOf(i));
+        }
+//        for(String tmp : a )
+//        {
+//            System.out.println(tmp);
+//        }
+//        System.out.println("----------------------------------");
+        a.forEach(System.out :: println);
+//        System.out.println("----------------------------------");
+        a.stream().forEach(System.out :: println);
+        //并行流
+        a.parallelStream().forEach(System.out :: println);
 
     }
 

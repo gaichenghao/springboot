@@ -50,6 +50,18 @@ url重写：/abc;jsesssionid=xxxx 把cookie的值使用矩阵变量的方式进�
     邮箱:<input name="email"/>
     <input type="submit" value="提交"/>
 </form>
+<br/>
+测试复杂类型<hr/>
+测试封装POJO:
+<form action="/saveuser" method="post">
+    用户名：<input name="username" value="zhangsan"/>  <br/>
+    年龄:<input name="age" value="19"/><br/>
+    生日:<input name="birth" value="2019/12/10"/><br/>
+<!--    宠物名称:<input name="pet.name" value="阿猫"/><br/>-->
+<!--    宠物年龄:<input name="pet.age" value="5"/><br/>-->
+    宠物：<input name="pet" value="ame,3"/>
+    <input type="submit" value="保存"/>
+</form>
 
 </body>
 </html>
