@@ -1,19 +1,15 @@
 package com.cbf.springbootdb.service;
 
-
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.cbf.springbootdb.bean.Book;
-import com.cbf.springbootdb.mapper.BookMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
-@Service
-public class BookService {
+import java.util.List;
 
-    @Autowired
-    BookMapper bookMapper;
+public interface BookService extends IService<Book> {
 
-    public Book getBook(Long userid){
-        return bookMapper.getBook(userid);
-    }
 
+
+    public Book getBook(Long userid);
+
+    List<Book> getAll();
 }

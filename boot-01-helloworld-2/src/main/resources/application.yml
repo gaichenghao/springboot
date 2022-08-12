@@ -22,7 +22,7 @@ person:
     - 9999.98
     - 9999.99
   pet:
-    name: 狗
+     name: 狗
     weight: 10
   allPets:
     sick:

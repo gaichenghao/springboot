@@ -57,7 +57,7 @@ public class ParameterTestController {
                         @MatrixVariable List<String> brand,
                         @PathVariable("path") String path){
         Map<String,Object> map=new HashMap<>();
-        map.put("low",low);
+        map.put ("low",low);
         map.put("brand",brand);
         map.put("path",path);
         return map;
@@ -65,7 +65,7 @@ public class ParameterTestController {
 
     //"/boss/1;age=20/2;age=10"
     @GetMapping("/boss/{bossId}/{empId}")
-    public Map boss(@MatrixVariable(value = "age",pathVar = "bossId") Integer bossAge,
+    public Map  boss(@MatrixVariable(value = "age",pathVar = "bossId") Integer bossAge,
                     @MatrixVariable(value = "age",pathVar = "empId") Integer empAge){
         Map<String,Object> map=new HashMap<>();
         map.put("bossAge",bossAge);

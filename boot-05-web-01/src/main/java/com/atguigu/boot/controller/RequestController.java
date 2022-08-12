@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
-public class RequestController {
+public class  RequestController {
 
     @GetMapping("/goto")
     public String goToPage(HttpServletRequest request){
